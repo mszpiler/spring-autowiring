@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- Use it if you want to use annotation like @Autowire -->
+    <context:annotation-config/>
+
+    <bean id="fooServiceOne" class="com.enotion.elearning.spring.services.FooServiceImplOne"/>
+
+    <!-- Has to be commented - autowiring not work because of two implementation of FooService -->
+    <!--<beans id="fooServiceTwo" class="com.enotion.elearning.spring.FooServiceImplTwowo"/>-->
+
+
+    <bean id="barServiceOne" class="com.enotion.elearning.spring.services.BarServiceImplOne"/>
+
+    <bean id="barServiceTwo" class="com.enotion.elearning.spring.services.BarServiceImplTwo"/>
+    <bean id="barServiceThree" class="com.enotion.elearning.spring.services.BarServiceImplThree"/>
+
+
+
+    <bean id="exampleFooByTypeBean" class="com.enotion.elearning.spring.beans.ExampleFooByTypeBean" autowire="byType"/>
+
+    <bean id="exampleBarByNameBean" class="com.enotion.elearning.spring.beans.ExampleBarByNameBean" autowire="byName"/>
+
+</beans>
