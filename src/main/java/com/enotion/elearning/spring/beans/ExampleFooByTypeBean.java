@@ -8,7 +8,7 @@ import javax.annotation.Resource;
 public class ExampleFooByTypeBean {
 
     /**
-     * @Autowire byType - check spring-config.xml
+     * @Autowire byType - check spring-config.xml - is only one bean with this type
      */
     private FooService fooServiceXYZ;
 

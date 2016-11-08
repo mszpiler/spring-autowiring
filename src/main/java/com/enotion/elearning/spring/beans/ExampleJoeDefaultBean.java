@@ -16,7 +16,7 @@ public class ExampleJoeDefaultBean {
 //    private BarService barServiceInject;
 
     /**
-     * @Resource search bean byName
+     * @Resource search bean byName, matched - check spring-config.xml
      */
     @Resource
     private BarService barServiceThree;

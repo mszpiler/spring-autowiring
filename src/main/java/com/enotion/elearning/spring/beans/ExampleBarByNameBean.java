@@ -7,12 +7,12 @@ import org.springframework.beans.factory.annotation.Qualifier;
 public class ExampleBarByNameBean {
 
     /**
-     * @Autowiring byName - check spring-config.xml
+     * @Autowiring byType not matched, so use byName to try - check spring-config.xml - there are two beans with this type
      */
     BarService barServiceOne;
 
     /**
-     * @Autowiring byName not matched - so Qualifier need to be used
+     * @Autowiring byType not matched, so use byName, not matched - so Qualifier need to be used - there are two beans with this type
      */
     @Autowired
     @Qualifier("barServiceTwo")

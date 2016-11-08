@@ -13,6 +13,8 @@ Second priority - configuration in class
 - @Inject - byType, if not matched byName
 - @Resource - byName, if not matched byType
 
+
+
 Result of this application:
 
 Execute ExampleFooByTypeBean...
