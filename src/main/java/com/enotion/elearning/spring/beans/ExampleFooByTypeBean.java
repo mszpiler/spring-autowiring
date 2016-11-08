@@ -19,6 +19,7 @@ public class ExampleFooByTypeBean {
     private FooService fooServiceTwo;
 
     public void execute() {
+        System.out.println("Exec ExampleFooByTypeBean...");
 
         fooServiceXYZ.foo();
 

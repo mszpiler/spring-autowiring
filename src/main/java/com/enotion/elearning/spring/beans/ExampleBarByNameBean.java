@@ -21,6 +21,7 @@ public class ExampleBarByNameBean {
 
 
     public void execute(){
+        System.out.println("Exec ExampleBarByNameBean...");
         barServiceOne.bar(); //output: BarServiceImplOne
         barService.bar(); //output: BarServiceImplTwo
     }

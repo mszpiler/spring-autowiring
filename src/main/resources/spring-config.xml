@@ -28,4 +28,6 @@
 
     <bean id="exampleBarByNameBean" class="com.enotion.elearning.spring.beans.ExampleBarByNameBean" autowire="byName"/>
 
+    <bean id="exampleJoeDefaultBean" class="com.enotion.elearning.spring.beans.ExampleJoeDefaultBean"/>
+
 </beans>
